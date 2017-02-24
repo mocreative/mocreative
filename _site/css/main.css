@@ -25,6 +25,13 @@ body {
   color: #7C7C7C;
   font-family: 'Raleway', sans-serif;
   font-size: 1.2rem;
+  background-color: #F8E8DB;
+  padding:13vh 12vw;
+}
+
+.border-container {
+  background-color: white;
+
 }
 
 h1 {
