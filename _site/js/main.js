@@ -1,4 +1,4 @@
-$(document).ready(funtion() {
+$(document).ready(function() {
 
   // jQuery code here
 
