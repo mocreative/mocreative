@@ -1,4 +1,4 @@
-/*<!-- Table of Contents
+/* -- Table of Contents
 1. Header
 2. Header About
 2. Lifestyle Image
@@ -10,27 +10,30 @@
   - Testimonials
   - Portfolio
 7. Instagram
-8. Footer  -->*/
+8. Footer  --- */
 
 /*This is the reset*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: 0;
+  /*border: 1px solid red;*/
 }
 
 /*-------Universal Styles------*/
 body {
-  color: grey;
+  color: #7C7C7C;
   font-family: 'Raleway', sans-serif;
   font-size: 1.2rem;
 }
 
 h1 {
+  color: #0B2027;
   font-family: 'Raleway', sans-serif;
 }
 
 h2, h3, h4 {
+  color: #0B2027;
   font-family: 'Raleway', sans-serif;
   }
 
@@ -58,7 +61,7 @@ h2 {
 }
 
 a {
-color: #F1A9A0;
+color: #0B2027;
 text-decoration: none;
 }
 
@@ -68,74 +71,9 @@ text-decoration: none;
   background-color: rgba(255, 255, 255, 0.5);
   /*padding: 10vh 10vw;*/
 }
-
-/*Hover Images*/
-figure.effect-lily img {
-	max-width: none;
-	width: calc(100% + 50px);
-	opacity: 0.7;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-	-webkit-transform: translate3d(-40px,0, 0);
-	transform: translate3d(-40px,0,0);
+.clear {
+  clear: both;
 }
-
-figure.effect-lily figcaption {
-	text-align: left;
-}
-
-figure.effect-lily figcaption > div {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	padding: 2em;
-	width: 100%;
-	height: 50%;
-}
-
-figure.effect-lily h2,
-figure.effect-lily p {
-	-webkit-transform: translate3d(0,40px,0);
-	transform: translate3d(0,40px,0);
-}
-
-figure.effect-lily h2 {
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	transition: transform 0.35s, -webkit-transform 0.35s;
-}
-
-figure.effect-lily p {
-	color: rgba(255,255,255,0.8);
-	opacity: 0;
-	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
-	transition: opacity 0.2s, -webkit-transform 0.35s;
-	transition: opacity 0.2s, transform 0.35s;
-	transition: opacity 0.2s, transform 0.35s, -webkit-transform 0.35s;
-}
-
-figure.effect-lily:hover img,
-figure.effect-lily:hover p {
-	opacity: 1;
-}
-
-figure.effect-lily:hover img,
-figure.effect-lily:hover h2,
-figure.effect-lily:hover p {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-
-figure.effect-lily:hover p {
-	-webkit-transition-delay: 0.05s;
-	transition-delay: 0.05s;
-	-webkit-transition-duration: 0.35s;
-	transition-duration: 0.35s;
-}
-
 
 /*----------Header------*/
 .top-banner {
@@ -152,7 +90,10 @@ figure.effect-lily:hover p {
 }
 
 .logo {
-width: 200px;
+  height: auto;
+  max-height: 140px;
+  width: auto;
+  max-width: 100%;
 }
 
 nav a {
@@ -160,6 +101,21 @@ nav a {
   font-family: 'Raleway', cursive;
   font-size: 15px
 }
+
+header nav {
+  text-align: right;
+}
+
+.fixed-social {
+  position:fixed;
+  top: 20vh;
+  right: 3vw;
+}
+
+.fixed-social a{
+  display: block;
+}
+
 /*----------Header About----------*/
 
 /*----------About----------*/
@@ -168,25 +124,6 @@ nav a {
   background-color: white;
   padding: 5%;
   max-width: 80%;
-}
-
-.kudos img {
-width: 351px;
-height: 261px;
-}
-.blog {
-width="590"
-height="403"
-}
-
-.portfolio {
-width="430"
-height="438"
-}
-
-.logo {
-max-width="8%"
-height="8%"
 }
 
 /*----------Services------*/
@@ -200,6 +137,10 @@ height="8%"
   /*- Blog
   - Testimonials
   - Portfolio*/
+
+  figure.effect-lily {
+    width: 100%;
+  }
 
 /*----------Instagram----------*/
 
