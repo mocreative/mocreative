@@ -4,6 +4,7 @@ padding: 0;
 box-sizing: 0;
 border: 1px solid red;
 }
+img {max-width: 100%}
 
 p {
   color: grey;
