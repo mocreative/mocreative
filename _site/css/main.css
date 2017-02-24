@@ -8,10 +8,21 @@ border: 1px solid red;
 p {
   color: grey;
 }
+
 .kudos img {
   width: 351px;
   height: 261px;
 }
+.blog {
+width="590"
+height="403"
+}
+
+.portfolio {
+width="430"
+height="438"
+}
+
 @media (max-width: 280px) {
   /*This is where my media Q's go*/
 }
