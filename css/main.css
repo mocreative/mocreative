@@ -25,6 +25,7 @@ body {
   color: #7C7C7C;
   font-family: 'Raleway', sans-serif;
   font-size: 1.2rem;
+  line-height: 1.55;
   background-color: #F8E8DB;
   padding:13vh 12vw;
 }
@@ -106,7 +107,12 @@ text-decoration: none;
 nav a {
   margin: 5px 20px;
   font-family: 'Raleway', cursive;
-  font-size: 15px
+  font-size: 15px;
+}
+
+nav a:hover {
+border-bottom: 1px solid;
+padding-bottom: 3px;
 }
 
 header nav {
@@ -134,9 +140,7 @@ header nav {
 }
 
 /*----------Services------*/
-.services {
-  padding-right: 5%
-}
+
 
 /*----------Clients------*/
 
