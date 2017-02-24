@@ -2,8 +2,16 @@
 margin: 0;
 padding: 0;
 box-sizing: 0;
+border: 1px solid red;
 }
 
 p {
   color: grey;
+}
+.kudos img {
+  width: 351px;
+  height: 261px;
+}
+@media (max-width: 280px) {
+  /*This is where my media Q's go*/
 }
