@@ -179,8 +179,11 @@ nav a:hover {
 /*----------About----------*/
 
 
-/*----------Services------*/
-
+/*----------Clients------*/
+.gallery-image {
+  background-size: cover;
+  background-position: center;
+}
 
 /*----------Portfolio------*/
 .brand-logos {
