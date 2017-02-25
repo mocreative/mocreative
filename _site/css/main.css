@@ -38,7 +38,6 @@ body {
   background-color: white;
 
 }
-
 h1 {
   color: #0B2027;
   font-family: 'Raleway', sans-serif;
@@ -66,9 +65,15 @@ h2 {
     background-color: #F1A9A0;
   }
 
+/*text*/
 .centered {
   text-align: center;
 }
+
+.align-left {
+    text-align: left;
+}
+
 
 a {
 color: #0B2027;
@@ -152,7 +157,7 @@ header nav {
   - Testimonials
   - Portfolio*/
 
-  figure.effect-lily {
+figure.effect-lily {
     width: 100%;
   }
 
@@ -185,4 +190,5 @@ form {
 @media (max-width: 280px) {
   /*This is where my media Q's go*/
 
+}
 }
