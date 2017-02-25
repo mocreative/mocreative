@@ -24,7 +24,7 @@
 body {
   color: #7C7C7C;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   line-height: 1.55;
   background-color: #F8E8DB;
   padding:13vh 12vw;
@@ -41,7 +41,7 @@ body {
 h1 {
   color: #0B2027;
   font-family: 'Raleway', sans-serif;
-  font-size: 8rem;
+  font-size: 2rem;
 }
 
 h2, h3, h4 {

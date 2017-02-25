@@ -1,0 +1,150 @@
+/* Another reset style */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/* Universal Styles */
+
+a {
+    text-decoration: none;
+    color: #002d56;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    color: #002d56;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 200;
+}
+
+
+/*-- Header --*/
+
+header {
+    height: 168px;
+    padding: 0 1.5em;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+header a {
+    line-height: 168px;
+}
+
+.navigation a {
+    padding: 0 1em;
+    font-weight: 400;
+}
+
+header img {
+    height: 72px;
+    width: 198px;
+}
+
+.logo {
+    padding: 2.5em 1em;
+}
+
+.top-banner {
+    background-image: url("/images/rookiehomepage_v2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+
+/*-- Main Content --*/
+
+.introduction {
+    text-align: center;
+    margin: 1%;
+}
+
+.main {
+    padding: 50px;
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.15;
+}
+
+.boxed {
+    border: 1px solid #002d56;
+}
+
+
+/*-- Stores --*/
+
+.featuredimage {
+    text-align: center;
+    width: 80%;
+}
+
+.featuredpara p {
+    text-align: right;
+}
+
+.featuredpara ul {
+    padding-left: 5em;
+}
+
+
+/*-- Lookbook Page --*/
+
+.centered {
+    text-align: center;
+    padding-top: 94px;
+}
+
+.lookbook {
+    width: 60% text-align: center;
+    margin: 5%;
+}
+
+.lookbook a {
+    font-weight: 400;
+}
+
+.moodshot {
+    text-align: right;
+}
+
+
+/*-- This is the footer --*/
+
+footer {
+    padding: 10vh 9vw;
+    background-color: #e7e1d5;
+    background-size: 20vh;
+    font-weight: 400;
+}
+
+footer a {
+    line-height: 30px;
+    list-style-type: none;
+}
+
+footer li {
+    list-style-type: none;
+}
