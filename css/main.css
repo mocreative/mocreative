@@ -117,18 +117,51 @@ text-decoration: none;
 }
 
 nav a {
-  margin: 5px 20px;
+  display: inline-block;
+  margin: 0 10px;
+  padding-bottom: 2px;
   font-family: 'Raleway', cursive;
   font-size: 15px;
+  border: 1px solid transparent;
+  -webkit-transition: border 0.3s ease;
+  transition: border 0.3s ease;
 }
-
 nav a:hover {
-border-bottom: 1px solid;
-padding-bottom: 3px;
+  border-bottom-color: #000;
 }
 
-header nav {
-  text-align: right;
+/* Mobile nav toggle */
+.nav-button {
+  display: none;
+
+  background-color: transparent;
+  border: none;
+  width: 15px;
+  margin: 0 auto;
+  font-size: 40px;
+}
+@media (max-width: 48em) {
+  nav {
+    position: relative;
+  }
+  .nav-button {
+    display: block;
+  }
+  .nav-items {
+    display: none;
+  }
+  .mobile-nav-active .nav-items {
+    display: block;
+    width: 100%;
+    text-align: right;
+    position: relative;
+    top: -15px;
+    right: 0;
+  }
+  nav a {
+    display: block;
+    text-align: center;
+  }
 }
 
 .fixed-social {
@@ -140,11 +173,13 @@ header nav {
 .fixed-social a{
   display: block;
 }
+/*---------- Mobile nav toggle ----------*/
+
 
 /*----------Header About----------*/
 
-/*----------About----------*/
 
+/*----------About----------*/
 
 
 /*----------Services------*/
@@ -156,21 +191,21 @@ header nav {
   padding-right: 10%
 }
 .centered {
-    text-align: center;
-    padding-top: 94px;
+  text-align: center;
+  padding-top: 94px;
 }
 
 .portfolio {
-    width: 60%; text-align: center;
-    margin: 5%;
+  width: 60%; text-align: center;
+  margin: 5%;
 }
 
 .portfolio a {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .moodshot {
-    text-align: right;
+  text-align: right;
 }
 
 /*----------Other Links----------*/
@@ -179,30 +214,31 @@ header nav {
   - Portfolio*/
 
 figure.effect-lily {
-    width: 100%;
-  }
+  width: 100%;
+}
 
 /*----------Instagram----------*/
 
 
-
 /*----------Footer------*/
 .footer {
-  background-color: #ECECEC;
+  background-color: white;
 }
+
 /*----------Contact----------*/
 form input {
-width: 100%;
-padding: 12px;
-margin: 6px 0 4px;
-border: 1px solid #ccc;
-background: #fafafa;
-font-family: sans-serif;
-font-size: 12px;
-line-height: normal;
-box-sizing: border-box;
-border-radius: 2px;
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0 4px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: normal;
+  box-sizing: border-box;
+  border-radius: 2px;
 }
+
 form {
   max-width: 700px;
   margin: auto;
@@ -210,6 +246,4 @@ form {
 
 @media (max-width: 280px) {
   /*This is where my media Q's go*/
-
-}
 }

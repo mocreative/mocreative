@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
-  // jQuery code here
+  $('.nav-button').click(function() {
+    $('nav').toggleClass('mobile-nav-active');
+  });
 
 });
