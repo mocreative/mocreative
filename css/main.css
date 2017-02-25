@@ -151,6 +151,23 @@ header nav {
 
 
 /*----------Clients------*/
+.centered {
+    text-align: center;
+    padding-top: 94px;
+}
+
+.portfolio {
+    width: 60%; text-align: center;
+    margin: 5%;
+}
+
+.portfolio a {
+    font-weight: 400;
+}
+
+.moodshot {
+    text-align: right;
+}
 
 /*----------Other Links----------*/
   /*- Blog
