@@ -30,14 +30,24 @@ body {
   padding:13vh 12vw;
   text-align: center;
 }
+
+a {
+  color: #0B2027;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 2%;
+}
+
 .line {
   border-bottom: 1px solid grey;
-
 }
+
 .border-container {
   background-color: white;
-
 }
+
 h1 {
   color: #0B2027;
   font-size: 2rem;
@@ -51,8 +61,32 @@ h2 {
   font-size: 2rem;
 }
 
-h2:after {
-  border-bottom: 1px solid;
+h2.clients-heading:after,
+h2.other-heading:after,
+h2.services-heading:after,
+h2.instagram-heading:after {
+  content:' ';
+  display:block;
+  border:1px solid #000;
+  margin-bottom: 5%;
+}
+
+/* TODO: Annie do this shit!!!!! */
+.clients-heading:after {
+  width: 40%;
+  margin-left: 30px;
+}
+.other-heading:after {
+  width: 40%;
+  margin-left: 30px;
+}
+.services-heading:after {
+  width: 40%;
+  margin-left: 30px;
+}
+.instagram-heading:after {
+  width: 40%;
+  margin-left: 30px;
 }
 
 section, footer {
@@ -75,11 +109,6 @@ section, footer {
 
 .align-left {
     text-align: left;
-}
-
-a {
-color: #0B2027;
-text-decoration: none;
 }
 
 .trans {
@@ -128,6 +157,7 @@ nav a {
   -webkit-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
+
 nav a:hover {
   border-bottom-color: #000;
 }
@@ -182,14 +212,45 @@ nav a:hover {
 
 
 /*----------About----------*/
+.about-page-left img {
+  width: 70%;
+  float: right;
+}
 
+.about-page-left h3 {
+  text-align: left;
+  margin-left: -60px;
+  font-size: 2.5rem;
+}
+
+.about-page-left .about-text {
+  text-align: left;
+  width: 80%;
+}
+
+.about-page-right img {
+  width: 80%;
+  float: left;
+  z-index: 0;
+}
+
+.about-page-right h3 {
+  text-align: right;
+  margin-right: -60px;
+  font-size: 2.5rem;
+}
+
+.about-page-right .about-text {
+  text-align: right;
+  width: 70%;
+  z-index: 1;
+}
 
 /*----------Services----------*/
 .services-items {
   margin-bottom: 5%;
   padding: 0 2%;
 }
-
 
 /*----------Clients------*/
 .gallery-image img {
@@ -200,9 +261,6 @@ nav a:hover {
 .brand-logos {
   padding-left: 10%;
   padding-right: 10%
-}
-.centered {
-  text-align: center;
 }
 
 .portfolio {
@@ -239,6 +297,11 @@ figure.effect-lily {
   padding: 7.2px 0;
 }
 
+/*----------Testimonials----------*/
+.testimonials img {
+  max-width: 100%;
+}
+
 /*----------Instagram----------*/
 .instagram {
   margin-bottom: 2%;
@@ -250,18 +313,27 @@ figure.effect-lily {
 }
 
 /*----------Contact----------*/
+.contact h3 {
+  margin-bottom: 5%;
+}
+
 form input {
   width: 100%;
   padding: 12px;
   margin: 6px 0 4px;
   border: 1px solid #ccc;
-  background: #fafafa;
+  background: #fff;
   font-family: sans-serif;
   font-size: 12px;
   line-height: normal;
   box-sizing: border-box;
   border-radius: 2px;
 }
+
+.contact-button:hover {
+  background-color: #F8E8DB;
+}
+
 
 form {
   max-width: 700px;
