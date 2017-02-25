@@ -40,13 +40,11 @@ body {
 }
 h1 {
   color: #0B2027;
-  font-family: 'Raleway', sans-serif;
   font-size: 2rem;
 }
 
 h2, h3, h4 {
   color: #0B2027;
-  font-family: 'Raleway', sans-serif;
   }
 
 h2 {
@@ -73,7 +71,6 @@ h2 {
 .align-left {
     text-align: left;
 }
-
 
 a {
 color: #0B2027;
@@ -133,13 +130,13 @@ nav a:hover {
 /* Mobile nav toggle */
 .nav-button {
   display: none;
-
   background-color: transparent;
   border: none;
   width: 15px;
   margin: 0 auto;
   font-size: 40px;
 }
+
 @media (max-width: 48em) {
   nav {
     position: relative;
@@ -215,6 +212,14 @@ nav a:hover {
 
 figure.effect-lily {
   width: 100%;
+}
+
+.image-summaries .lily-container {
+  font-family: 'Slabo 27px', serif;
+}
+
+.image-summaries .portfolio {
+  padding: 0;
 }
 
 /*----------Instagram----------*/
