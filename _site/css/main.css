@@ -50,9 +50,14 @@ h2, h3, h4 {
 h2 {
   font-size: 2rem;
 }
-  section, footer {
-    padding: 10vh 0;
-    margin: 0 10vw;
+
+h2:after {
+  border-bottom: 1px solid;
+}
+
+section, footer {
+  padding: 10vh 0;
+  margin: 0 5%;
 }
 
 .no-padding {
@@ -179,10 +184,16 @@ nav a:hover {
 /*----------About----------*/
 
 
+/*----------Services----------*/
+.services-items {
+  margin-bottom: 5%;
+  padding: 0 2%;
+}
+
+
 /*----------Clients------*/
-.gallery-image {
-  background-size: cover;
-  background-position: center;
+.gallery-image img {
+  max-width: 200px;
 }
 
 /*----------Portfolio------*/
@@ -224,8 +235,14 @@ figure.effect-lily {
   padding: 0;
 }
 
-/*----------Instagram----------*/
+.other-links-portfolio {
+  padding: 7.2px 0;
+}
 
+/*----------Instagram----------*/
+.instagram {
+  margin-bottom: 2%;
+}
 
 /*----------Footer------*/
 .footer {

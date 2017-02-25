@@ -2,7 +2,7 @@
 .lily-container {
 	position: relative;
 	margin: 0 auto;
-	padding: 1em 0 4em;
+	padding: 1em 0 0;
 	max-width: 1000px;
 	list-style: none;
 	text-align: center;
@@ -13,7 +13,7 @@
 	position: relative;
 	float: left;
 	overflow: hidden;
-	margin: 5px 5%;
+	margin: 0 7%;
 	background: #FFF;
 	text-align: center;
 	cursor: pointer;
