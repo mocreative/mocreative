@@ -81,7 +81,7 @@ h2.instagram-heading:after {
   margin-left: 30px;
 }
 .services-heading:after {
-  width: 40%;
+  width: 20%;
   margin-left: 30px;
 }
 .instagram-heading:after {
@@ -129,7 +129,6 @@ section, footer {
 /*----------Header------*/
 .top-banner {
   min-height: 100vh;
-  background-image: url(../images/giphy.gif);
   background-size: cover;
   background-attachment: fixed;
   color: #6C7A89;
@@ -212,6 +211,9 @@ nav a:hover {
 
 
 /*----------About----------*/
+.about-page-home {
+  margin-top: 10px;
+}
 .about-page-left img {
   width: 70%;
   float: right;
@@ -244,6 +246,7 @@ nav a:hover {
   text-align: right;
   width: 70%;
   z-index: 1;
+  padding-left: 10%;
 }
 
 /*----------Services----------*/
@@ -256,6 +259,9 @@ nav a:hover {
 .gallery-image img {
   max-width: 200px;
 }
+.client-image {
+  max-width: 100%;
+}
 
 /*----------Portfolio------*/
 .brand-logos {
@@ -263,8 +269,12 @@ nav a:hover {
   padding-right: 10%
 }
 
+.portfolio-items {
+    margin-bottom: 5%;
+}
+
 .portfolio {
-  width: 60%; text-align: center;
+  text-align: center;
   margin: 5%;
 }
 
