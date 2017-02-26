@@ -71,7 +71,13 @@ h2.instagram-heading:after {
   margin-bottom: 5%;
 }
 
-/* TODO: Annie do this shit!!!!! */
+/* Utility */
+
+.no-top-padding {
+  padding-top: 0;
+}
+
+/* TODO: Annie swap logos around */
 .clients-heading:after {
   width: 40%;
   margin-left: 30px;
@@ -90,7 +96,7 @@ h2.instagram-heading:after {
 }
 
 section, footer {
-  padding: 10vh 0;
+  padding: 8vh 0;
   margin: 0 5%;
 }
 
@@ -152,13 +158,10 @@ nav a {
   padding-bottom: 2px;
   font-family: 'Raleway', cursive;
   font-size: 15px;
-  border: 1px solid transparent;
-  -webkit-transition: border 0.3s ease;
-  transition: border 0.3s ease;
 }
 
 nav a:hover {
-  border-bottom-color: #000;
+  border-bottom: 1px solid #0B2027;
 }
 
 /* Mobile nav toggle */
@@ -171,29 +174,7 @@ nav a:hover {
   font-size: 40px;
 }
 
-@media (max-width: 48em) {
-  nav {
-    position: relative;
-  }
-  .nav-button {
-    display: block;
-  }
-  .nav-items {
-    display: none;
-  }
-  .mobile-nav-active .nav-items {
-    display: block;
-    width: 100%;
-    text-align: right;
-    position: relative;
-    top: -15px;
-    right: 0;
-  }
-  nav a {
-    display: block;
-    text-align: center;
-  }
-}
+
 
 .fixed-social {
   position:fixed;
@@ -257,7 +238,8 @@ nav a:hover {
 
 /*----------Clients------*/
 .gallery-image img {
-  max-width: 200px;
+  max-width: 90%;
+  margin:5%;
 }
 .client-image {
   max-width: 100%;
@@ -316,6 +298,9 @@ figure.effect-lily {
 .instagram {
   margin-bottom: 2%;
 }
+.instagram a:hover {
+  border: none;
+}
 
 /*----------Footer------*/
 .footer {
@@ -331,7 +316,7 @@ form input {
   width: 100%;
   padding: 12px;
   margin: 6px 0 4px;
-  border: 1px solid #ccc;
+  border: 2px solid #F8E8DB;
   background: #fff;
   font-family: sans-serif;
   font-size: 12px;
@@ -340,9 +325,22 @@ form input {
   border-radius: 2px;
 }
 
+form input:focus {
+  outline: 1px solid #7c7c7c;
+}
+
 .contact-button:hover {
   background-color: #F8E8DB;
 }
+.contact-button {
+  width: auto;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #7C7C7C;
+}
+
 
 
 form {
@@ -350,6 +348,58 @@ form {
   margin: auto;
 }
 
-@media (max-width: 280px) {
-  /*This is where my media Q's go*/
+.contact-message {
+  padding-bottom: 200px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 48em) {
+  nav {
+    position: relative;
+  }
+  .nav-button {
+    display: block;
+  }
+  .nav-items {
+    display: none;
+  }
+  .mobile-nav-active .nav-items {
+    display: block;
+    width: 100%;
+    text-align: right;
+    position: relative;
+    top: -15px;
+    right: 0;
+  }
+  nav a {
+    display: block;
+    text-align: center;
+  }
+  .instagram a {
+    display: inline-block;
+  }
+
+  .mobile-hide {
+    display:none;
+  }
+
+}
+
+/* Tablet responsiveness */
+
+@media(max-width:64em) {
+  .about-page-right h3 {
+    margin: 0;
+  }
+
+  .about-page-right .about-text {
+    padding: 0;
+  }
 }

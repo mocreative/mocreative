@@ -3,16 +3,4 @@ layout: default
 title: Mo.Creative | About
 ---
 
-<section class="contact">
-  <!-- todo add shit! -->
-  <h2 class="centered">Contact Me</h2>
-  <h3 class="centered">Don't be afraid to get in contact. I don't bite, and I am always open for a chat!</h3>
-
-  <form action="https://formspree.io/hello@mocreativemarketing.com.au"
-        method="POST">
-      <label for="name">Please Complete The Form Below</label>
-      <input type="text" name="name" placeholder="Your Name">
-      <input type="email" name="_replyto" placeholder="Email">
-      <input class="contact-button" type="submit" value="Send">
-  </form>
-</section>
+{% include contact.html %}
